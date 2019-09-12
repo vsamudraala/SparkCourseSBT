@@ -1,0 +1,7 @@
+*.log
+
+*/.idea/*
+*/Input_Dir/*
+*/Output_Dir/*
+*/target/*
+*/spark-warehouse/*
