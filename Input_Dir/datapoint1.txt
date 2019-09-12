@@ -1,0 +1,17 @@
+Name,UniPrdId,Location,Year,Week,BaseDmd
+
+Venkatesh,1234,789,2019,17,10
+
+Samudrala,1234,789,2019,18,15
+
+Swetha,1234,889,2019,17,11
+
+Prabhakar,1234,889,2019,18,17
+
+Padma,9234,789,2019,17,19
+
+Bappa,9234,789,2019,18,18
+
+Hamsini,9234,889,2019,17,12
+
+Rajender,9234,889,2019,18,17
