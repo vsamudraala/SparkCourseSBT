@@ -16,6 +16,7 @@ public class FrequencyCharacter
 
                     //Set string[j] to 0 to avoid printing visited character
                     string[j] = '0';
+                    System.out.println("Ganapathi");
                 }
             }
         }
