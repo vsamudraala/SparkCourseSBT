@@ -1,5 +1,6 @@
 package RDDBasics
 
+import org.apache.spark
 import org.apache.spark.{SparkConf, SparkContext}
 
 // OBJECT is the main entry point like the static in Java
@@ -23,5 +24,6 @@ object CreatingSparkContext {
 
   println("Number of Elements in RDD: ", arrayRDD.count())
   arrayRDD.foreach(println)
+
   }
 }
