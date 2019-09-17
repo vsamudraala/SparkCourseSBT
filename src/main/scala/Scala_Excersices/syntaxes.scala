@@ -207,20 +207,88 @@ object syntaxes {
     //    println(s"Taste level of $donutType = $tasteLevel4")
 
 
-    /** PATTERN MATCHING BY TYPES ***************/
-    println("\nStep 6: Pattern matching by types")
-    val priceOfDonut: Any = 2
-    val priceType = priceOfDonut match {
-      case price: Int => "Int"
-      case price: Double => "Double"
-      case price: Float => "Float"
-      case price: String => "String"
-      case price: Boolean => "Boolean"
-      case price: Char => "Char"
-      case price: Long => "Long"
+    //    /** PATTERN MATCHING BY TYPES ***************/
+    //        println("\nStep 6: Pattern matching by types")
+    //        val priceOfDonut: Any = List(1,2,3,4)
+    //        val priceType = priceOfDonut match {
+    //          case price: Int => "Int"
+    //          case price: Double => "Double"
+    //          case price: Float => "Float"
+    //          case price: String => "String"
+    //          case price: Boolean => "Boolean"
+    //          case price: Char => "Char"
+    //          case price: Long => "Long"
+    //          case _ => "Different One"
+    //        }
+    //        println(s"Donut price type = $priceType")
+
+    /** ******************************************************************
+      * ****************************************************************
+      * ***Use Tuples(Pattern Match) ************************************
+      * *****************************************************************/
+
+    /** Access each element in tuple ********/
+
+
+    //  val glazedDonutTuple = Tuple2("Glazed Donut", "Very Tasty")
+    //    println(s"Glazed Donut with 2 data points = $glazedDonutTuple")
+    //    val donutType = glazedDonutTuple._1
+    //    val donutTasteLevel = glazedDonutTuple._2
+    //    println(s"$donutType taste level is $donutTasteLevel")
+
+    //    println("\nStep 3: Using TupleN classes to store more than 2 data points")
+    //    val glazedDonut = Tuple3("Glazed Donut", "Very Tasty", 2.50)
+    //    println(s"${glazedDonut._1} taste level is ${glazedDonut._2} and it's price is ${glazedDonut._3} ")
+    //
+    //    println("\nStep 4: How to use pattern matching on Tuples")
+    //    val strawberryDonut = Tuple3("Strawberry Donut", "Very Tasty", 2.50)
+    //    val plainDonut = Tuple3("Plain Donut", "Tasty", 2)
+    //    val donutList = List(strawberryDonut, plainDonut)
+    //    val priceOfPlainDonut = donutList.foreach { tuple => {
+    //      tuple match {
+    //        case ("Plain Donut", taste, price) => println(s"Donut type = Plain Donut, price = $price")
+    //        case d if d._1 == "Glazed Donut" => println(s"Donut type = ${d._1}, price = ${d._3}")
+    //        case _ => None
+    //      }
+    //    }
+    //    }
+    ///**Using Option - Avoid Null**************/
+    //    println("\n Option, None and Some helps to avoid NullPOinterExceptions kinda stuff ")
+    //    println("Step 1: How to use Option and Some - basic example")
+    //    val glazedDonutTaste: Option[String] = Some("Very Tasty")
+    //    println(s"Glazed Donut taste = ${glazedDonutTaste.get}")
+    //
+
+    //    println("\nStep 2: How to use Option and None - a basic example")
+    //    val glazedDonutName: Option[String] = None
+    //    println(s"Glazed Donut name = ${glazedDonutName.getOrElse("Glazed Donut")}")
+
+//    /** Pattern Matching with Option *************/
+//    val glazedDonutName: Option[String] = None // Some("GBM")
+//    println("\nStep 3: How to use Pattern Matching with Option")
+//    val glazedDonutTaste: Option[String] = Some("Very Tasty")
+//
+//    glazedDonutName match {
+//      case Some(name) => println(s"Received donut name = $name")
+//      case None => println(s"No donut name was found!")
+//        println("\nTip 1: Filter None using map function")
+//        glazedDonutTaste.map(taste => println(s"glazedDonutTaste = $taste"))
+//        glazedDonutName.map(name => println(s"glazedDonutName = $name"))
+//    }
+
+    /**ENNUMERATION****************/
+    println("Step 1: How to create an enumeration")
+    object Donut extends Enumeration {
+      type Donut = Value
+
+      val Glazed      = Value("Glazed Flavoured Donut")
+      val Strawberry  = Value("Strawberry Flavoured Donut")
+      val Plain       = Value("Plain Flavoured Donut")
+      val Vanilla     = Value("Vanilla Flavoured Donut")
     }
-    println(s"Donut price type = $priceType")
-
-
+    println("\nStep 2: How to print the String value of the enumeration")
+    println(s"Vanilla Donut string value = ${Donut.Vanilla}")
+    println("\nStep 3: How to print the id of the enumeration")
+    println(s"Vanilla Donut's id = ${Donut.Vanilla.id}")
   }
 }
