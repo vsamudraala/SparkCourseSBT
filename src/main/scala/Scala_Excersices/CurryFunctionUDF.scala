@@ -8,7 +8,7 @@ object CurryFunctionUDF {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName("Functions Currying")
-       //.master("local[*]") //Commented for the pgm that will be deployed in GCP Data proc cluster
+      //.master("local[*]") //Commented for the pgm that will be deployed in GCP Data proc cluster
       .getOrCreate()
 
     val data = spark.read
@@ -17,10 +17,11 @@ object CurryFunctionUDF {
       .csv(args(0))
 
     data.show()
-    val DiffData = data.withColumn("DIFF CLOSE", diffCalculation()(data("CLOSE"), data("PREVCLOSE")))
-    DiffData.show()
+//    val DiffData = data.withColumn("DIFF CLOSE", diffCalculation()(data("CLOSE"), data("PREVCLOSE")))
+//    DiffData.show()
   }
-  def diffCalculation(): UserDefinedFunction = udf ((close: Double, prevClose: Double) => {
-    close-prevClose
-  })
+
+//  def diffCalculation(): UserDefinedFunction = udf((close: Double, prevClose: Double) => {
+//    close - prevClose
+//  }
 }

@@ -1,5 +1,7 @@
 package TelsukoScala
 
+import org.apache.spark
+
 object basics {
 
   def main(args: Array[String]): Unit = {
@@ -33,26 +35,28 @@ object basics {
     //        val v2=nums.drop(2)
     //        println(v2)
 
-    case class Student(Id: Int, Name: String, rNo: Int)
-    var students = List(Student(1, "Venkatesh", 97), Student(2, "Sushma", 83), Student(3, "Chow", 109), Student(4, "Kantilo", 111), Student(5, "Ashok", 93))
+       case class Student(Id: Int, Name: String, rNo: Int)
+        var students = List(Student(1, "Venkatesh", 97), Student(2, "Ashok",75 ), Student(3, "Chow", 109), Student(4, "Kantilo", 111), Student(5, "Ashok", 93))
 
     //println(students)
     //
     //val topper = students.filter(s=>s.Name.equals("Chow"))
     //    println("Topper is : " +topper)
 
-    //    val (part1, part2) =students.partition(s => s.rNo <= 100)
-    //    println("1st Partition is : " +part1, "2nd Partition is : "+part2)
-    //    println("\n Reverse the elements")
-    //    var l1=nums.reverse
-    //    println(l1)
-    //
-    //    println("TUPLES")
-    //    val part1 = partitions._1
-    //    println(part1)
-    //
-    //    val part2 = partitions._2
-    //    println(part2)
+        val /*(part1, part2)*/ partitions=students.partition(s =>  s.rNo <= 100)
+//        println("1st Partition is : " +part1, "2nd Partition is : "+part2)
+//        println("\n Reverse the elements")
+//        var l1=nums.reverse
+//        println(l1)
 
+        println("TUPLES")
+        val part1 = partitions._1
+        println("Number one  >> " +part1)
+
+        val part2 = partitions._2
+        println("NUmber two >> " +part2)
+
+
+  println("The class name is " +getClass.getName)
   }
 }

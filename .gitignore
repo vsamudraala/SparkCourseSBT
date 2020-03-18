@@ -1,7 +1,7 @@
-*.log
-
-*/.idea/*
-*/Input_Dir/*
-*/Output_Dir/*
+.gradle
 */target/*
-*/spark-warehouse/*
+*.settings
+/bin
+/build
+.cache-main
+.DS_Store

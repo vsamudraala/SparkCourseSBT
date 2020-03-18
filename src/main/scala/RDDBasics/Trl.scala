@@ -33,6 +33,7 @@ object Trl {
       val df = spark.createDataFrame(rowRDD, schema)
       df.printSchema()
       df.show(4)
+
     }
 
 
