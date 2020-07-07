@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/SparkUDFExample.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="18" selection-end-line="28" selection-end-column="1" />
+            <state relative-caret-position="342">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#19#59#0" expanded="true" />
               </folding>
@@ -46,14 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Scala_Excersices/CurryFunctionUDF.scala">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/DataFrame.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
-              <folding>
-                <element signature="e#26#66#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/Creating_Multiple_sparkSessions_In_a_Single_Job.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -127,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/app.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/RDDBasics/BraodcastVariables.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/GCP/SparkOnGcp.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/RDDBasics/SparkUDFExample.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Scala_Excersices/Currying.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Scala_Excersices/CurryFunctionUDF.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/RDDBasics/SparkUDFExample.scala" />
       </list>
     </option>
   </component>
@@ -147,17 +153,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SparkCourseSBT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparkCourseSBT" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,14 +313,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3116122602406" />
         <entry key="$PROJECT_DIR$/build.sbt" value="580046923" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
-      </map>
-    </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -375,16 +365,18 @@
       <workItem from="1568060140984" duration="9321000" />
       <workItem from="1568252457010" duration="656000" />
       <workItem from="1568253597299" duration="523000" />
+      <workItem from="1594146428991" duration="66000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102307000" />
+    <option name="totallyTimeSpent" value="102373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20590462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20893262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -400,7 +392,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3054449" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.23904383" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32934928" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32934928" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026495" side_tool="true" weight="0.32536522" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49735048" weight="0.32841823" />
@@ -621,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/DataFrame.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Student.java" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/CreatingSparkContext.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -640,13 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/Creating_Multiple_sparkSessions_In_a_Single_Job.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -745,17 +723,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Input_Dir/sampleCSV.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -786,16 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/SparkUDFExample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="18" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#19#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/RDD_with_CSV_file.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -803,12 +771,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/DataFrame.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/Creating_Multiple_sparkSessions_In_a_Single_Job.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Scala_Excersices/CurryFunctionUDF.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="223">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="15" />
           <folding>
             <element signature="e#26#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/RDDBasics/SparkUDFExample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#19#59#0" expanded="true" />
           </folding>
         </state>
       </provider>

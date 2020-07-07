@@ -21,6 +21,7 @@ object SparkUDFExample {
 
     //3. Use UDF with Spark DataFrame/Dataset
     stocks.select(toLowerUDF(stocks("SYMBOL"))).show()
+  print ("TestAdded")
   }
 
   //1.Define a function
